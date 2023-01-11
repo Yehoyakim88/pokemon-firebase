@@ -1,16 +1,18 @@
 import { Injectable } from '@angular/core';
 import { addDoc, collection, collectionData, CollectionReference, deleteDoc, doc, docData, DocumentData, Firestore, updateDoc } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
+import { Pokemon } from '../features/pokemon/interfaces/pokemon.interface';
 
-interface Pokemon {
-  height: number;
-  id: string;
-  description: string;
-  imgUrl: string;
-  name: string;
-  type: string;
-  weight: number;
-}
+// interface cut and paste to ./src/app/features/pokemon/interfaces/pokemon.interface.ts
+// interface Pokemon {
+//   height: number;
+//   id: string;
+//   description: string;
+//   imgUrl: string;
+//   name: string;
+//   type: string;
+//   weight: number;
+// }
 
 @Injectable({
   providedIn: 'root'
